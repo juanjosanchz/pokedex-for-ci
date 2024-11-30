@@ -1,9 +1,9 @@
 name: 30 nov
 
 on:
-    push:
-        branches:
-          - main:
+  push:
+    branches:
+     - main:
 
 jobs:
     Hello_world:
