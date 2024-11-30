@@ -1,9 +1,8 @@
----
 name: 30 nov
 on:
   push:
     branches:
-      - main: null
+      - main:
 jobs:
   Hello_world:
     runs-on: ubuntu-18.04
