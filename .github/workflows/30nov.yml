@@ -1,14 +1,13 @@
+---
 name: 30 nov
-
 on:
   push:
     branches:
-     - main:
-
+      - main: null
 jobs:
-    Hello_world:
-        runs-on: ubuntu-18.04
-        steps:
-          - name: Echo the message
-            run: |
-              echo "Hola Juan"
+  Hello_world:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Echo the message
+        run: |
+          echo "Hola Juan"
