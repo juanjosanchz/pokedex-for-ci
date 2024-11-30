@@ -27,20 +27,17 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loaders: ['style-loader', 'css-loader'],
+        use: ['style-loader', 'css-loader'],
       }
-    ],
+    ]
   },
   resolve: {
-    extensions: ["*", ".js", ".jsx"],
-  },
-  devServer: {
-    historyApiFallback: true,
+    extensions: ['.js', '.jsx'],  // Esto asegura que se resuelvan las extensiones correctas
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./public/index.html",
-      filename: "./index.html",
-    }),
-  ],
+      template: "./src/index.html",
+      filename: "./index.html"
+    })
+  ]
 };
