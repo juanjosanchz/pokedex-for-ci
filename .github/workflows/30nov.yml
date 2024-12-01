@@ -1,6 +1,7 @@
 name: 30 nov
 on:
   push:
+<<<<<<< HEAD
     branches:
       - main
 jobs:
@@ -10,3 +11,15 @@ jobs:
       - name: Echo the message
         run: |
           echo "Hola Juan"
+=======
+     branches:
+        - main:
+            
+jobs:
+   Hello_world:
+       runs-on: ubuntu-18.04
+       steps:
+        - name: eho the message
+          run: |
+            echo "Hola Juan"
+>>>>>>> 128ef22 (Resolvió conflictos)
