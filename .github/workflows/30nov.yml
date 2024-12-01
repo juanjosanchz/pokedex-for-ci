@@ -1,25 +1,17 @@
+
 name: 30 nov
 on:
   push:
-<<<<<<< HEAD
     branches:
       - main
 jobs:
   Hello_world:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - name: Echo the message
         run: |
           echo "Hola Juan"
-=======
-     branches:
-        - main:
-            
-jobs:
-   Hello_world:
-       runs-on: ubuntu-18.04
-       steps:
-        - name: eho the message
-          run: |
-            echo "Hola Juan"
->>>>>>> 128ef22 (Resolvió conflictos)
+      - name: Dime la fecha
+        run: date
+      - run: ls -l
+      
