@@ -11,10 +11,8 @@ jobs:
       - name: Echo the message
         run: |
           echo "Hola Juan"
-<<<<<<< HEAD
+
       - name: Dime la fecha
         run: date
       - run: ls -l
-      
-=======
->>>>>>> e1a1322f90093129cdb535b5be5935bd5219b836
+
