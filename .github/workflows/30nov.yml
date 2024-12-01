@@ -1,7 +1,6 @@
 name: 30 nov
 on:
   push:
-<<<<<<< HEAD
     branches:
       - main
 jobs:
