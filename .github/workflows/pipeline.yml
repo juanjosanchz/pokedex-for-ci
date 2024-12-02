@@ -8,18 +8,19 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Esto asegura que se haga un "checkout" completo del repositorio
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'  # Aquí no necesitas repetir "node-version"
-      
+          node-version: '18'
+
       - name: Install dependencies
         run: npm install
 
-      - name: Lint
+      - name: Lint code
         run: npm run eslint
